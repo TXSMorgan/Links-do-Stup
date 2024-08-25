@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transmissor de Links Futurista</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+            overflow: hidden;
+            background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+            animation: gradientAnimation 15s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+        }
+
+        .link-button {
+            background-color: transparent;
+            color: white;
+            padding: 15px 30px;
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            margin: 15px 0;
+            border: 2px solid #00ffcc;
+            transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .link-button img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .link-button:hover {
+            background-color: #00ffcc;
+            color: #121212;
+            box-shadow: 0 0 30px #00ffcc;
+            transform: translateY(-5px);
+        }
+
+        .link-button.discord {
+            border-color: #7289DA;
+        }
+
+        .link-button.discord:hover {
+            background-color: #7289DA;
+            box-shadow: 0 0 30px #7289DA;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a class="link-button" href="https://r.search.yahoo.com/_ylt=AwrEq1OblMtm05MOYEbz6Qt.;_ylu=Y29sbwNiZjEEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1725827483/RO=10/RU=https%3a%2f%2fwww.youtube.com%2f%40stup8019/RK=2/RS=iGDw.ZyW9CCGpP9a2dg6O0Ta7kI-" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/YouTube_icon_%282013-2017%29.png" alt="YouTube Icon">
+            Canal
+        </a>
+        <br>
+        <a class="link-button discord" href="https://discord.gg/9W6kNPCj" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Discord_logo.svg" alt="Discord Icon">
+            Discord Oficial
+        </a>
+    </div>
+</body>
+</html>
